@@ -48,8 +48,9 @@ function Projects() {
             </p>
             <section className="technology-container">
               <span className="technology">Vite</span>
-              <span className="technology">React Hook Form</span>
               <span className="technology">React</span>
+              <span className="technology">React Hook Form</span>
+              <span className="technology">Axios</span>
               <span className="technology">Node</span>
               <span className="technology">Express</span>
               <span className="technology">MongoDB</span>
@@ -85,6 +86,8 @@ function Projects() {
             </p>
             <section className="technology-container">
               <span className="technology">React</span>
+              <span className="technology">React Query</span>
+              <span className="technology">Axios</span>
               <span className="technology">Node</span>
               <span className="technology">Express</span>
               <span className="technology">MongoDB</span>
