@@ -45,49 +45,6 @@ section h1 {
   }
 }
 
-.image-container {
-  display: flex;
-  padding-top: 3rem;
-  align-items: flex-start;
-}
-
-@media (max-width: 1000px) {
-  .image-container {
-    justify-content: center;
-    padding: 0;
-    margin-bottom: 1rem;
-  }
-
-  .image-container img {
-    height: 100%;
-    width: 100%;
-  }
-}
-
-.image-container img {
-  max-width: 300px;
-  object-fit: cover;
-  clip-path: circle();
-}
-
-.about-me {
-  display: flex;
-}
-
-@media (max-width: 1000px) {
-  .about-me {
-    flex-direction: column;
-  }
-}
-
-.paragraph {
-  margin-bottom: 1rem;
-}
-
-.about-me ul {
-  margin-left: 1rem;
-}
-
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
