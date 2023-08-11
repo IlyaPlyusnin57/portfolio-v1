@@ -1,0 +1,26 @@
+.navbar {
+  top: 0;
+  position: sticky;
+  display: flex;
+  padding: 1rem 0 1rem;
+  justify-content: end;
+  background-color: #1f4f5e;
+  font-size: clamp(0.7rem, 3vw, 1rem);
+  z-index: 999;
+}
+
+.nav-item {
+  padding: 0;
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  /* text-decoration: solid underline 0.05rem var(--secondary-color-transparent); */
+  border-bottom: 1px solid var(--secondary-color-transparent);
+  font-family: "Courier New", Courier, monospace, Verdana, sans-serif;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    /* text-decoration-color: var(--secondary-color); */
+    border-bottom-color: var(--secondary-color);
+  }
+}
