@@ -4,7 +4,6 @@ import Navbar from "./components/navbar/Navbar";
 import Introduction from "./components/introduction/Introduction";
 import AboutMe from "./components/about_me/AboutMe";
 import Projects from "./components/projects/Projects";
-import ContactMe from "./components/contact_me/ContactMe";
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
       <Introduction />
       <AboutMe />
       <Projects />
-      <ContactMe />
     </>
   );
 }

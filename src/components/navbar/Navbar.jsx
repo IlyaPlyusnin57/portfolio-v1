@@ -9,9 +9,6 @@ function Navbar() {
       <a className="nav-item" href="#projects">
         <span className="secondary-color">02.</span> Projects
       </a>
-      <a className="nav-item" href="#contact-me">
-        <span className="secondary-color">03.</span> Contact Me
-      </a>
     </nav>
   );
 }
