@@ -22,7 +22,7 @@ function Projects() {
             </section>
             <section className="view-links-container">
               <a
-                href="https://netflix-clone-front-end-seven.vercel.app"
+                href="https://netflix-clone-front-end-ilya-plyusnin.vercel.app"
                 target="_blank"
                 rel="noreferrer"
               >
