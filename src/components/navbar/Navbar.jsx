@@ -1,4 +1,5 @@
 import "./Navbar.scss";
+import pdf from "../../assets/resume/resume.pdf";
 
 function Navbar() {
   return (
@@ -9,6 +10,11 @@ function Navbar() {
       <a className="nav-item" href="#projects">
         <span className="secondary-color">02.</span> Projects
       </a>
+      <button className="btn">
+        <a href={pdf} target="_blank" rel="noopener noreferrer">
+          Resume
+        </a>
+      </button>
     </nav>
   );
 }
