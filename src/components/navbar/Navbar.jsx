@@ -11,7 +11,12 @@ function Navbar() {
         <span className="secondary-color">02.</span> Projects
       </a>
       <button className="btn">
-        <a href={pdf} target="_blank" rel="noopener noreferrer">
+        <a
+          href={pdf}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="padding"
+        >
           Resume
         </a>
       </button>

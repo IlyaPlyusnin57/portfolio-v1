@@ -25,8 +25,11 @@ body {
   appearance: none;
   background-color: transparent;
   border: 1px solid var(--secondary-color);
-  padding: 0.5rem 1rem;
   margin-right: 1rem;
+}
+
+.padding {
+  padding: 0.5rem 1rem;
 }
 
 .secondary-color {
@@ -51,6 +54,10 @@ section h1 {
   .container {
     padding: 1rem;
   }
+}
+
+a {
+  display: inline-block;
 }
 
 /* unvisited link */
