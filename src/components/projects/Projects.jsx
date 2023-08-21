@@ -56,7 +56,7 @@ function Projects() {
               <span className="technology">MongoDB</span>
               <span className="technology">Socket.IO</span>
               <span className="technology">JWT</span>
-              <span className="technology">SCSS</span>
+              <span className="technology">Sass</span>
             </section>
             <section className="view-links-container">
               <a
@@ -94,7 +94,7 @@ function Projects() {
               <span className="technology">Mongoose</span>
               <span className="technology">Socket.IO</span>
               <span className="technology">JWT</span>
-              <span className="technology">SCSS</span>
+              <span className="technology">Sass</span>
             </section>
             <section className="view-links-container">
               <a
