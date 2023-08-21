@@ -40,3 +40,17 @@
 .about-me ul {
   margin-left: 1rem;
 }
+
+.regular-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo {
+  max-width: 100px;
+}
