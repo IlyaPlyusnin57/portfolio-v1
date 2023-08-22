@@ -7,6 +7,7 @@ import nodeLogo from "../../assets/img/node-logo.png";
 import "./AboutMe.scss";
 
 import { useWatchRefs } from "../../hooks/useWatchRefs";
+import { forwardRef } from "react";
 
 function Skills() {
   const ref = useWatchRefs();
@@ -53,9 +54,9 @@ function Skills() {
   );
 }
 
-function Paragraphs() {
+const Paragraphs = forwardRef(function Paragraphs(props, ref) {
   return (
-    <div className="paragraph-container">
+    <div className="paragraph-container hidden" ref={ref}>
       <h1>About Me</h1>
       <p className="paragraph">
         Hey there, I&#39;m Ilya, and I find immense joy in crafting web
@@ -109,19 +110,19 @@ function Paragraphs() {
       <Skills />
     </div>
   );
-}
+});
 
 function AboutMeContent() {
   const ref = useWatchRefs();
 
   return (
     <>
-      <div className="about-me hidden" ref={ref}>
+      <div className="about-me">
         <section className="image-container">
-          <img src={imgUrl} alt="profile-image" />
+          <img src={imgUrl} alt="profile-image" className="hidden" ref={ref} />
         </section>
 
-        <Paragraphs />
+        <Paragraphs ref={ref} />
       </div>
     </>
   );
