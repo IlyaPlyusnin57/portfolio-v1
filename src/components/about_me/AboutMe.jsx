@@ -6,18 +6,47 @@ import cssLogo from "../../assets/img/css-logo.png";
 import nodeLogo from "../../assets/img/node-logo.png";
 import "./AboutMe.scss";
 
+import { useWatchRefs } from "../../hooks/useWatchRefs";
+
 function Skills() {
+  const ref = useWatchRefs();
+
   return (
     <div>
       <h1>Skills</h1>
 
       <div className="regular-container">
         <div className="logo-container">
-          <img src={htmlLogo} alt="JavaScript Logo" className="logo" />
-          <img src={cssLogo} alt="JavaScript Logo" className="logo" />
-          <img src={javascriptLogo} alt="JavaScript Logo" className="logo" />
-          <img src={reactLogo} alt="JavaScript Logo" className="logo" />
-          <img src={nodeLogo} alt="JavaScript Logo" className="logo" />
+          <img
+            src={htmlLogo}
+            alt="JavaScript Logo"
+            className="logo hidden"
+            ref={ref}
+          />
+          <img
+            src={cssLogo}
+            alt="JavaScript Logo"
+            className="logo hidden"
+            ref={ref}
+          />
+          <img
+            src={javascriptLogo}
+            alt="JavaScript Logo"
+            className="logo hidden"
+            ref={ref}
+          />
+          <img
+            src={reactLogo}
+            alt="JavaScript Logo"
+            className="logo hidden"
+            ref={ref}
+          />
+          <img
+            src={nodeLogo}
+            alt="JavaScript Logo"
+            className="logo hidden"
+            ref={ref}
+          />
         </div>
       </div>
     </div>
@@ -83,9 +112,11 @@ function Paragraphs() {
 }
 
 function AboutMeContent() {
+  const ref = useWatchRefs();
+
   return (
     <>
-      <div className="about-me">
+      <div className="about-me hidden" ref={ref}>
         <section className="image-container">
           <img src={imgUrl} alt="profile-image" />
         </section>

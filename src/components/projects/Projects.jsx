@@ -1,13 +1,16 @@
 import "./Projects.scss";
+import { useWatchRefs } from "../../hooks/useWatchRefs";
 
 function Projects() {
+  const ref = useWatchRefs();
+
   return (
     <section id="projects" className="projects-container container">
       <div>
         <h1>Projects</h1>
 
         <div className="projects">
-          <div className="project-item">
+          <div className="project-item hidden" ref={ref}>
             <h4>Netflix Clone Front End</h4>
             <p className="project-description">
               In this project, I developed a Netflix Clone front end using HTML
@@ -37,7 +40,7 @@ function Projects() {
               </a>
             </section>
           </div>
-          <div className="project-item">
+          <div className="project-item hidden" ref={ref}>
             <h4>Authentication System</h4>
             <p className="project-description">
               In this project, I built a React powered web app enabling secure
@@ -75,7 +78,7 @@ function Projects() {
               </a>
             </section>
           </div>
-          <div className="project-item">
+          <div className="project-item hidden" ref={ref}>
             <h4>Social Media</h4>
             <p className="project-description">
               This is a comprehensive social media React application that
