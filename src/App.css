@@ -21,6 +21,17 @@ body {
   font-size: 100%;
 }
 
+.hidden {
+  opacity: 0;
+  transform: translateY(25%);
+  transition: all 0.55s ease-in;
+}
+
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .btn {
   appearance: none;
   background-color: transparent;
