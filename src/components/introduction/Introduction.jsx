@@ -20,8 +20,8 @@ function Introduction() {
           </a>
         </div>
         <div>
-          Enthusiastic junior front-end software engineer dedicated to creating
-          accessible and user-centric web interfaces
+          Enthusiastic software engineer dedicated to creating accessible and
+          user-centric web applications
         </div>
       </div>
     </section>
